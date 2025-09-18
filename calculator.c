@@ -40,8 +40,6 @@ else if (choice == 4) {
     result = divide(a, b);
     printf ("The quotient of the two integers is: %d", result);
 }
-
-scanf ("%d", &a); //Forces terminal to stay open to see sum, not meant for any use 
 }
 
 
