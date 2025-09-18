@@ -12,7 +12,7 @@ int choice = 0; //Initialized to ensure the while loop starts
 while ((choice<1)||(choice>4)) { //While loop defines range of acceptable integers for menu
 printf("Please enter the number of the operation you would like: \n 1) Add \n 2) Subtract \n 3) Multiply \n 4) Divide \n \n");
 if (scanf("%d", &choice)!=1){ //Combines choice selection with integer checks
-    printf("Please enter a valid integer. \n");
+    printf("Please enter a valid integer. \n"); //Only displays if a non-integer is input
 
     int check;
     while ((check = getchar()) != '\n' ){ //Removes nonsense until reads a new line (Removes user's ability to enter a character)
@@ -34,7 +34,7 @@ printf ("Enter two numbers you would like to use:\n"); //Accepts input for the t
 while (scanf ("%lf %lf", &a, &b) != 2) { //Combines choice selection with double checks
     printf("Please enter two valid numbers.\n");
     int check;
-    while ((check = getchar()) != '\n') {
+    while ((check = getchar()) != '\n') { //Reused strategy from first while loop
         continue;
     }
 
